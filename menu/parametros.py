@@ -1,27 +1,3 @@
-# import streamlit as st
-
-# def render():
-#     st.header("Configuração de Parâmetros Globais")
-#     st.write("Defina aqui os custos e parâmetros dos algoritmos.")
-
-#     # Parâmetros globais de custo
-#     custo_km = st.number_input("Custo por quilômetro (R$)", min_value=0.0, max_value=100.0, value=2.5, step=0.1)
-#     custo_min = st.number_input("Custo por minuto (R$)", min_value=0.0, max_value=100.0, value=0.5, step=0.1)
-
-#     # Parâmetros comuns dos algoritmos
-#     max_iter = st.number_input("Máximo de iterações", min_value=10, max_value=5000, value=1000, step=10)
-#     tempo_limite = st.number_input("Tempo máximo de execução (segundos)", min_value=10, max_value=3600, value=300, step=10)
-
-#     # Salvar parâmetros na sessão
-#     st.session_state["custo_km"] = custo_km
-#     st.session_state["custo_min"] = custo_min
-#     st.session_state["max_iter"] = int(max_iter)
-#     st.session_state["tempo_limite"] = int(tempo_limite)
-
-#     st.success("Parâmetros atualizados. Eles serão usados nos algoritmos e cálculos de custo.")
-
-
-
 import streamlit as st
 from algoritmos.matriz_custos import calcular_matriz_custos
 import pandas as pd
